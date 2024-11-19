@@ -207,7 +207,8 @@ public class createBD {
                                 "\t\"precioRenta\" REAL NOT NULL\r\n" +
                                 ");";
 
-                String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+                String url = "jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
+        
 
                 try (Connection con = DriverManager.getConnection(url)) {
                         Statement st = con.createStatement();

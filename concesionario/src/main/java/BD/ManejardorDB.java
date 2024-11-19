@@ -39,10 +39,9 @@ public class ManejardorDB {
     }
 
     private Connection getConnection() throws Exception {
-        String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+        String url = "jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
         return DriverManager.getConnection(url);
     }
-
     public void agregarUsuario(Usuario usuario) {
         String sql = "INSERT INTO usuario (nombre, apellido, cedula, clave, pregunta_recuperacion) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
@@ -324,7 +323,7 @@ public class ManejardorDB {
 
     public ArrayList<IPersona> obtenerClientes() {
         ArrayList<IPersona> clientes = new ArrayList<>();
-        String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+        String url ="jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
 
         String query = "SELECT * FROM cliente";
 
@@ -362,7 +361,7 @@ public class ManejardorDB {
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
-        String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+        String url = "jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
 
         try {
             conn = DriverManager.getConnection(url);
@@ -613,7 +612,7 @@ public class ManejardorDB {
 
         try {
           
-            conn = DriverManager.getConnection("jdbc:sqlite:src\\main\\java\\BD\\DB.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db");
 
             // Consulta SQL para buscar al usuario por cédula
             String query = "SELECT * FROM usuario WHERE cedula = ?";

@@ -55,7 +55,7 @@ public class inicio_sesionController {
             System.out.println("Por favor ingrese ambos campos.");
             return;
         }
-        String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+        String url = "jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
         try (Connection conn = DriverManager.getConnection(url)) {
             // Consulta SQL para verificar si el usuario y la contraseña coinciden
             String query = "SELECT * FROM usuario WHERE cedula = ? AND clave = ?";
@@ -89,7 +89,7 @@ public class inicio_sesionController {
 
     public IPersona obtenerUsuario(String cedula) {
         IPersona usuario = null;
-        String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+        String url = "jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
         String query = "SELECT * FROM usuario WHERE cedula = ?";
         
         try (Connection conn = DriverManager.getConnection(url); // Conexión a la base de datos

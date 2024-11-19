@@ -39,7 +39,7 @@ void recuperarContraseña(ActionEvent event) throws IOException {
     }
 
     // Establecer conexión con la base de datos
-    String url = "jdbc:sqlite:src\\main\\java\\BD\\DB.db";
+    String url = "jdbc:sqlite:concesionario\\src\\main\\java\\BD\\DB.db";
     String query = "SELECT clave FROM usuario WHERE cedula = ? AND pregunta_recuperacion = ?";
 
     // Realizamos la consulta a la base de datos
