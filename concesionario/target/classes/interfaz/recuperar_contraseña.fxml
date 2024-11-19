@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.controllers.RecuperarContraseñaController">
+    <children>
+        <!-- Contenedor VBox con estilo para padding -->
+        <VBox alignment="CENTER" layoutX="176.0" layoutY="74.0" spacing="20" style="-fx-padding: 20;">
+            
+            <!-- Título de la ventana -->
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Recuperar Contraseña" />
+            
+            <!-- Campo para la cédula -->
+            <TextField fx:id="cedulaField" promptText="Ingresa tu cédula" />
+            
+            <!-- Campo para la pregunta de recuperación -->
+            <TextField fx:id="respuestaField" promptText="¿Cuál es tu mascota favorita?" />
+            
+            <!-- Botón para recuperar la contraseña -->
+            <Button onAction="#recuperarContraseña" text="Recuperar Contraseña" />
+        </VBox>
+    </children>
+</AnchorPane>

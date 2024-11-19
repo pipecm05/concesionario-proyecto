@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane prefHeight="620.0" prefWidth="800" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.controllers.VehicleController">
+    <!-- Tab para el Bus -->
+    <Tab text="Bus">
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+        </content>
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+        </content>
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Pane layoutY="1.0" prefHeight="588.0" prefWidth="800.0">
+                        <children>
+                            <VBox layoutX="425.0" layoutY="6.0" prefHeight="579.0" prefWidth="375.0">
+                                <children>
+                                    <TextField fx:id="txtNumeroPuertas" promptText="Número de Puertas" />
+                                    <CheckBox fx:id="chkAireAcondicionado" text="Aire Acondicionado" />
+                                    <CheckBox fx:id="chkABS" text="ABS" />
+                                    <TextField fx:id="txtCapacidadMaletero" promptText="Capacidad del Maletero (L)" />
+                                    <CheckBox fx:id="chkCamaraReversa" text="Cámara de Reversa" />
+                                    <TextField fx:id="txtNumeroSalidasEmergencia" promptText="Número de Salidas de Emergencia" />
+                                    <TextField fx:id="txtPrecioVehiculo" promptText="Precio del Vehículo" />
+                                    <TextField fx:id="txtPrecioRenta" promptText="Precio de Renta" />
+                                    <Button onAction="#handleGuardarBus" text="Guardar Bus" />
+                                </children>
+                            </VBox>
+                        </children>
+                    </Pane>
+                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="686.0" prefWidth="412.0" spacing="10">
+                        <children>
+                            <TextField fx:id="txtID" promptText="ID" />
+                            <TextField fx:id="txtMarca" promptText="Marca" />
+                            <ComboBox fx:id="cmbAlimentacion" promptText="Tipo de Alimentación" />
+                            <ComboBox fx:id="cmbTipoCaja" promptText="Tipo de Caja" />
+                            <TextField fx:id="txtNuevoUsado" promptText="Nuevo/Usado" />
+                            <TextField fx:id="txtCambios" promptText="Cambios" />
+                            <TextField fx:id="txtVelocidadMaxima" promptText="Velocidad Máxima (km/h)" />
+                            <TextField fx:id="txtCilindrada" promptText="Cilindrada (cc)" />
+                            <TextField fx:id="txtNumeroPasajeros" promptText="Número de Pasajeros" />
+                            <TextField fx:id="txtCantidadBolsasAire" promptText="Cantidad de Bolsas de Aire" />
+                            <TextField fx:id="txtNumeroEjes" promptText="Número de Ejes" />
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+        </content>
+    </Tab>
+
+    <!-- Tab para la Van -->
+    <Tab text="Van">
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+        </content>
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+        </content>
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Pane layoutY="1.0" prefHeight="588.0" prefWidth="800.0">
+                        <children>
+                            <VBox layoutX="425.0" layoutY="6.0" prefHeight="579.0" prefWidth="375.0">
+                                <children>
+                                    <TextField fx:id="txtNumeroPuertasVan" promptText="Número de Puertas" />
+                                    <CheckBox fx:id="chkAireAcondicionadoVan" text="Aire Acondicionado" />
+                                    <CheckBox fx:id="chkABSVan" text="ABS" />
+                                    <TextField fx:id="txtCapacidadMaleteroVan" promptText="Capacidad del Maletero (L)" />
+                                    <CheckBox fx:id="chkCamaraReversaVan" text="Cámara de Reversa" />
+                                    <TextField fx:id="txtPrecioVehiculoVan" promptText="Precio del Vehículo" />
+                                    <TextField fx:id="txtPrecioRentaVan" promptText="Precio de Renta" />
+                                    <Button onAction="#handleGuardarVan" text="Guardar Van" />
+                                </children>
+                            </VBox>
+                        </children>
+                    </Pane>
+                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="686.0" prefWidth="412.0" spacing="10">
+                        <children>
+                            <TextField fx:id="txtIDVan" promptText="ID" />
+                            <TextField fx:id="txtMarcaVan" promptText="Marca" />
+                            <ComboBox fx:id="cmbAlimentacionVan" promptText="Tipo de Alimentación" />
+                            <ComboBox fx:id="cmbTipoCajaVan" promptText="Tipo de Caja" />
+                            <TextField fx:id="txtNuevoUsadoVan" promptText="Nuevo/Usado" />
+                            <TextField fx:id="txtCambiosVan" promptText="Cambios" />
+                            <TextField fx:id="txtVelocidadMaximaVan" promptText="Velocidad Máxima (km/h)" />
+                            <TextField fx:id="txtCilindradaVan" promptText="Cilindrada (cc)" />
+                            <TextField fx:id="txtNumeroPasajerosVan" promptText="Número de Pasajeros" />
+                            <TextField fx:id="txtCantidadBolsasAireVan" promptText="Cantidad de Bolsas de Aire" />
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+        </content>
+    </Tab>
+
+    <!-- Tab para Sedan -->
+    <Tab text="Sedan">
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+        </content>
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+        </content>
+        <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Pane layoutY="1.0" prefHeight="588.0" prefWidth="800.0">
+                        <children>
+                            <VBox layoutX="425.0" layoutY="6.0" prefHeight="579.0" prefWidth="375.0">
+                                <children>
+                                    <TextField fx:id="txtNumeroPuertasSedan" promptText="Número de Puertas" />
+                                    <CheckBox fx:id="chkAireAcondicionadoSedan" text="Aire Acondicionado" />
+                                    <CheckBox fx:id="chkABSSedan" text="ABS" />
+                                    <TextField fx:id="txtCapacidadMaleteroSedan" promptText="Capacidad del Maletero (L)" />
+                                    <CheckBox fx:id="chkCamaraReversaSedan" text="Cámara de Reversa" />
+                                    <TextField fx:id="txtPrecioVehiculoSedan" promptText="Precio del Vehículo" />
+                                    <TextField fx:id="txtPrecioRentaSedan" promptText="Precio de Renta" />
+                                    <Button text="Guardar Sedan" />
+                                </children>
+                            </VBox>
+                        </children>
+                    </Pane>
+                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="686.0" prefWidth="412.0" spacing="10">
+                        <children>
+                            <TextField fx:id="txtIDSedan" promptText="ID" />
+                            <TextField fx:id="txtMarcaSedan" promptText="Marca" />
+                            <ComboBox fx:id="cmbAlimentacionSedan" promptText="Tipo de Alimentación" />
+                            <ComboBox fx:id="cmbTipoCajaSedan" promptText="Tipo de Caja" />
+                            <TextField fx:id="txtNuevoUsadoSedan" promptText="Nuevo/Usado" />
+                            <TextField fx:id="txtVelocidadMaximaSedan" promptText="Velocidad Máxima (km/h)" />
+                            <TextField fx:id="txtCilindradaSedan" promptText="Cilindrada (cc)" />
+                            <TextField fx:id="txtNumeroPasajerosSedan" promptText="Número de Pasajeros" />
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+        </content>
+    </Tab>
+
+</TabPane>
